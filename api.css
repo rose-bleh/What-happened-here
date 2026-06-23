@@ -1,0 +1,47 @@
+html {
+  background-color: rgb(220, 245, 228);
+}
+#container {
+  background-size: cover;
+  width: 1600px;
+  margin: 0 auto;
+  border-radius: 10px;
+  height: 900px;
+  margin-top:20px;
+  margin-bottom: 10px;
+  position:relative;
+  border: solid #477556 2pt;
+  background-color: rgb(183, 214, 183);
+}
+#container2 {
+  background-size: cover;
+  width: 1000px;
+  margin: 0 auto;
+  border-radius: 10px;
+  height: 300px;
+  margin-top:50px;
+  margin-bottom: 10px;
+  position:relative;
+  border: solid #477556 2pt;
+  background-color: rgb(155, 189, 155);
+  text-align: center;
+  font-size: 30px;
+}
+#month, #days, button {
+  background-color: #d2eedb;
+  font-size: 20px;
+}
+#answerbox {
+  background-size: cover;
+  width: 1300px;
+  margin: 0 auto;
+  border-radius: 10px;
+  height: 450px;
+  margin-top:20px;
+  margin-bottom: 10px;
+  position:relative;
+  border: solid #477556 2pt;
+  background-color: rgb(155, 189, 155);
+  text-align: center;
+  font-size: 30px;
+}
