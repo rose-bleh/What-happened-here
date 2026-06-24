@@ -1,10 +1,22 @@
-// geting api info
-getInfo()
+//getting info from button/user input
+function saveInfo() {
+  const monthValue = document.getElementById("month")
+  const dayValue = document.getElementById("days")
+  const button = document.getElementById("button")
 
-let day = "1";
-let month = "1"
+  button.addEventListener("click", async () => {
+    month = monthValue .value;
+    day = dayValue.value;
+    
+    await getInfo(month, day);
+  })
+}
 
-async function getInfo(){
+// geting api info 
+async function getInfo(userMonth, userDay){
+  const url = `https://today.zenquotes.io/api/${userMonth}/${userDay}`;
+  //https://today.zenquotes.io/api/1/1 example
+  const answer = document.getElementById("answerbox");
 
   try {
     const response = await fetch(url);
@@ -12,19 +24,9 @@ async function getInfo(){
       throw new Error(`Response status: ${response.status}`);
     }
     const data = await response.json();
-    console.group(data);
-
-    const url = "https://today.zenquotes.io/api/" + month + "/" + day
-     //https://today.zenquotes.io/api/1/1 example
-    const answer = document.getElementById("answerbox")
+    console.log(data);
   }
   catch (error) {
-  console.log(error.message);
-
-
-}
-}
-//getting info from button? 
-function sendInfo() {
-  const userInput = 
+  console.log("error");
+  }
 }
