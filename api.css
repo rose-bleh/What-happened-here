@@ -27,9 +27,10 @@ html {
   text-align: center;
   font-size: 30px;
 }
-#month, #days, button {
+#month, #days, #genre, button {
+  margin-top: 50px;
   background-color: #d2eedb;
-  font-size: 20px;
+  font-size: 21px;
 }
 #answerbox {
   background-size: cover;
@@ -42,6 +43,9 @@ html {
   position:relative;
   border: solid #477556 2pt;
   background-color: rgb(155, 189, 155);
+}
+#answertext{
+  margin-top: 90px;
   text-align: center;
   font-size: 30px;
 }
