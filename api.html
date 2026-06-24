@@ -9,7 +9,7 @@
         <div id="container">
             <div id="container2">
                 <label for="month">Choose a month:</label>
-                    <select name="month" id="month">
+                    <select id="month">
                         <option value="1">January</option>
                         <option value="2">February</option>
                         <option value="3">March</option>
@@ -24,7 +24,7 @@
                         <option value="12">December</option>
                     </select>
                 <label for="days">Choose a day:</label>
-                    <select name="days" id="days">
+                    <select id="days">
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -57,11 +57,18 @@
                         <option value="30">30</option>
                         <option value="31">31</option>
                     </select>
+                    <label for="genre">Choose a genre:</label>
+                    <select id="genre">
+                        <option value="events">Events</option>
+                        <option value="births">Births</option>
+                        <option value="deaths">Deaths</option>
+                    </select>
                     <br><br>
-                    <button type="submit">What happened here?</button>
+                    <button onclick = "saveInfo()" id="button">What happened here?</button>
+                    <!--<button type="submit">What happened here?</button>-->
             </div>
-            <div>
-                <p id="answerbox"></p>
+            <div id="answerbox">
+                <p id="answertext"></p>
             </div>
         </div>
         <script src="api.js" defer></script>
