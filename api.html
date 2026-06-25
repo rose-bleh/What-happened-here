@@ -2,12 +2,16 @@
 <html>
     <head>
         <title>What happened here?</title>
-        <link rel="stylesheet" href="api.css" />
+        <link rel="stylesheet" href="api.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     </head>
 
     <body>
         <div id="container">
             <div id="container2">
+                <img src="thinking.png" id="thinking_pic">
                 <label for="month">Choose a month:</label>
                     <select id="month">
                         <option value="1">January</option>
@@ -69,8 +73,12 @@
             </div>
             <div id="answerbox">
                 <p id="answertext"></p>
+                <!--<p>info from <a href="https://www.wikipedia.org/">Wikipedia</a>!</p>-->
             </div>
         </div>
+        <footer>
+            <p>info from <a href="https://www.wikipedia.org/">Wikipedia</a>!</p>
+        </footer>
         <script src="api.js" defer></script>
     </body>
 </html>
